@@ -1,0 +1,11 @@
+package ar.edu.unlam.pb2.admin.empleados;
+
+public enum Area {
+	AREA_MARKETING,
+	AREA_RRHH,
+	AREA_VENTAS,
+	AREA_ADMINISTRACION,
+	AREA_SOPORTE,
+	AREA_DESARROLLO,
+	AREA_INFRAESTRCUTURA;
+}
