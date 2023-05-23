@@ -34,6 +34,27 @@ public class Empresa {
 		this.empleados.add(unEmpleado);
 	
 	}
+
+	public Empleado buscarElGerenteDeUnaAreaDeterminada(Integer area) {
+		Area areaBuscada = this.buscarArea(area);
+
+		for(Empleado buscado : this.empleados) {
+			if(buscado instanceof Gerente && buscado.getDepartamento().equals(areaBuscada)) {
+				return buscado;
+			}
+		}
+		return null;
+	}
+
+	private Area buscarArea(Integer indiceArea) {
+		Area arrayArea[] = Area.values();
+		
+		if(indiceArea>0 && indiceArea<= arrayArea.length) {
+			return arrayArea[indiceArea-1];
+		}
+		
+		return null;
+	}
 	
 	
 

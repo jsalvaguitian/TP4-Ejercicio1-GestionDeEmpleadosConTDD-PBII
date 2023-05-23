@@ -1,6 +1,7 @@
 package ar.edu.unlam.pb2.admin.empleados;
 
 public enum Area {
+	AREA_GENERAL, // 1 CEO
 	AREA_MARKETING,
 	AREA_RRHH,
 	AREA_VENTAS,

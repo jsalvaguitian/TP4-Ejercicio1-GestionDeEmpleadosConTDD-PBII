@@ -3,9 +3,9 @@ package ar.edu.unlam.pb2.admin.empleados;
 public class Empleado {
 	private String nombre;
 	private String apellido;
-	private Double salario;
+	protected Double salario;
 	private String fechaNacimiento;
-	private Area departamento;
+	protected Area departamento;
 
 
 	public Empleado(String nombre, String apellido, Double salario, String fechaNacimiento,
@@ -17,6 +17,7 @@ public class Empleado {
 		this.departamento = depto;
 	}
 	
+	//Por el director
 	public Empleado(String nombre, String apellido, Double salario, String fechaNacimiento) {
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -24,5 +25,24 @@ public class Empleado {
 		this.fechaNacimiento = fechaNacimiento;
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
 
+	public String getApellido() {
+		return apellido;
+	}
+
+	public Double getSalario() {
+		return salario;
+	}
+
+	public String getFechaNacimiento() {
+		return fechaNacimiento;
+	}
+
+	public Area getDepartamento() {
+		return departamento;
+	}
+	
 }
